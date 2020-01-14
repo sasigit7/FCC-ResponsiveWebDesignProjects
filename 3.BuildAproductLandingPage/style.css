@@ -1,0 +1,307 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header section */
+#header {
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: white;
+}
+
+#headerLogo {
+  display: inline-block;
+  padding: 20px;
+}
+
+ #comp {
+  color: green;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+#header-img {
+  height: 50px;
+  width: 50px;
+}
+#nav-bar {
+  float: right;
+  margin: 30px;
+}
+
+#nav-bar ul {
+  list-style: none;
+}
+
+#nav-bar ul li {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN SECTION */
+#main {
+  margin-top: 195px;
+}
+
+#mainForm {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+#mainForm input {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+#mainForm input[type=email] {
+  width: 20%;
+}
+
+#mainForm input[type=submit] {
+  width: 150px;
+  padding: 5px;
+  background-color: yellowgreen;
+  font-weight: bold;
+}
+
+#mainForm input[type=submit]:hover {
+  background-color: rgb(206, 142, 60);
+}
+
+input {
+  background-color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+
+
+/* Flexbox section */
+#flexSection {
+  display: block;
+  width: 70%;
+  margin: 50px auto 50px auto;
+}
+
+#flexSection .row {
+  display: flex;
+  padding: 10px;
+}
+
+#flexSection .flexImage {
+  display: flex;
+  width: 20%;
+  padding-top: 20px;
+}
+
+#flexSection .flexImage img {
+  width: 20%;
+  height: 45%;
+  margin: 0 auto;
+}
+
+#flexSection .flexText {
+  width: 80%;
+}
+
+/* Video section */
+#videoPlayer{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#videoPlayer iframe {
+  width: 100%;
+  max-width: 560px;
+}
+
+#footer-section #fcc {
+  text-decoration: none;
+  color: green;
+}
+
+/* Pricing Section */
+
+#pricing {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#pricing .priceBox {
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  padding: 0 0 10px 0;
+  width: calc(100% / 3);
+}
+
+#pricing .priceBox h3 {
+  background-color: rgb(233, 229, 229);
+  padding: 20px 0;
+  margin: 0;
+  width: 100%;
+}
+
+#pricing .priceBox #price {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#pricing .priceBox button {
+  background-color: rgb(67, 206, 67);
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#pricing .priceBox button:hover {
+  background-color: rgb(120, 221, 20);
+}
+
+#pricing .priceBox button:hover {
+  background-color: greenyellow;
+}
+
+/* FOOTER SECTION */
+#footer-section {
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(233, 229, 229);
+  padding: 20px;
+  float: none;
+}
+
+#footer-section a {
+  margin: 0 auto;
+  padding: 5px;
+  color: black;
+}
+
+.footerLeft {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+
+.footerRight {
+  width: 40%;
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.footerRight ul li {
+  display: inline-block;
+}
+
+.footerRight ul {
+  list-style: none;
+}
+
+.footerRight ul li a {
+  text-decoration: none;
+}
+
+#footer-section #socialMedia {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+#footer-section .row {
+  display: inline-block;
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 719px) {
+  #main {
+    margin-top: 250px;
+  }
+  
+  #mainForm input[type=email] {
+    width: 60%;
+  }
+
+  #mainForm input[type=submit] {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  #mainForm input[type=submit]:hover {
+    background-color: rgb(111, 158, 18);
+    cursor: pointer;
+    transition: width 4s;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+  .nav-link {
+    line-height: 25px;
+  }
+  #headerLogo {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  #nav-bar {
+    width: 100%;
+    margin: 0px;
+  }
+   #nav-bar ul li {
+      display: block;
+      text-align: center;
+   }
+
+   #flexSection .flexImage {
+     display: none;
+   }
+   
+   #flexSection {
+     width: 100%;
+     margin: 40px 0 0 0;
+   }
+
+   #flexSection .flexText {
+     width: 100%;
+     text-align: center;
+   }
+  
+   #videoPlayer {
+     width: 100%;
+   }
+
+   #pricing {
+     display: block;
+     width: 70%;
+   }
+   #pricing .priceBox {
+     width: 100%;
+   }
+
+   .footerLeft, .footerRight {
+     width: 100%;
+   }
+   .footerRight {
+     text-align: center;
+     margin-top: -20px;
+   }
+   
+}
+
+

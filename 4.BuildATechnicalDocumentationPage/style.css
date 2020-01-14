@@ -1,0 +1,136 @@
+/* GLOBAL STYLES */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN SECTION */
+header {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p, li {
+  color: gray;
+  margin: 20px;
+}
+
+.main-section code {
+  display: block;
+  background-color: rgb(231, 227, 227);
+  padding: 20px;
+  width: 80%;
+}
+
+/* ASIDE SECTION */
+#navbar {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 10px;
+  width: 20%;
+  border-right: 5px solid #ccc;
+}
+#navbar ul{
+  list-style: none;
+  border-top: 1px solid black;
+  padding: 0;
+}
+
+#navbar ul li a{
+  display: block;
+  text-decoration: none;
+  color:gray;
+  padding: 15px;
+}
+
+#navbar ul li {
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+#navbar ul li:last-child {
+  border-bottom: 0;
+}
+
+/* FOOTER SECTION */
+#footer-section #fcc {
+  text-decoration: none;
+  color: gray;
+}
+
+#footer-section #fcc:hover {
+  color: green;
+}
+
+#footer-section p {
+  text-align: center;
+  color: teal;
+}
+#footer-section a {
+  margin: 0 auto;
+  padding: 5px;
+  color: black;
+}
+
+/* MEDIA QUERIES */
+/* RULES: 
+ MOBILE: min-width => 320px, max-width => 719px
+ IPAD: min-width => 720px, max-width => 1199px
+ DESKTOP: min-width => 1200px
+*/
+
+/* Mobile version */
+@media only screen and (min-width: 320px) {
+  #navbar {
+    background-color: #fff;
+    padding: 0px;
+    width: 100%;
+    border-right: 5px solid #ccc;
+    height: auto;
+    position: relative;
+    }
+  #navbar ul {
+    height: 300px;
+    overflow: scroll;
+    border: 2px solid black;
+  }
+  #navbar header {
+    text-align: center;
+  }
+
+  #footer-section {
+    text-align: center;
+  }
+
+}
+
+/* Desktop and Ipad version */
+@media only screen and (min-width: 720px) {
+   #navbar {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    }
+
+   #navbar ul {
+     height: auto;
+     border: none;
+   }
+
+   .main-section  {
+    margin-top: 25px;
+    width: 75%;
+    margin-left: 25%;
+ }
+
+ #footer-section {
+  color: black;
+  margin-top: 25px;
+  width: 75%;
+  margin-left: 25%;
+}
+}
+
